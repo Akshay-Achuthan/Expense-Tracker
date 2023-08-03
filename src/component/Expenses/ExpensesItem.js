@@ -12,6 +12,7 @@ const ExpenseItem = (props) => {
   }
 
   return (
+    <li>
     <Card className="expense-item">
       <ExpensesDate date={props.date}/>
       <div className="expense-item__description">
@@ -20,6 +21,7 @@ const ExpenseItem = (props) => {
         <button onClick={clickHandler}>Change title</button>
       </div>
     </Card>
+    </li>
   );
 }
 
